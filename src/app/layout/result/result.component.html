@@ -1,0 +1,29 @@
+<div class="result-div">
+  <div class="container">
+    <h2>My Result</h2>
+
+    <button class="new-btn">New</button>
+
+    <div class="table-div">
+      <table>
+        <tr class="title-table">
+          <th>Date</th>
+          <th>Distance in meters</th>
+          <th>Time</th>
+          <th>Average speed</th>
+          <th>Options</th>
+        </tr>
+        <tr *ngFor="let elem of array">
+          <td>{{elem.date}}</td>
+          <td>{{elem.distance}}</td>
+          <td>{{elem.time}}</td>
+          <td>{{elem.distance / elem.time}}</td>
+          <td>
+            <button>Edit</button>
+            <button>Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

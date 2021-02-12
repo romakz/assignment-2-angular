@@ -1,0 +1,19 @@
+.layout-div {
+  width: 100%;
+  height: auto;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  padding: 10px;
+}
+
+.left-child {
+  width: 20%;
+}
+
+.right-child {
+  width: 75%;
+}

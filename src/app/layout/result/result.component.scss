@@ -1,0 +1,43 @@
+.container {
+  padding-top: 20px;
+}
+
+button.new-btn  {
+  border: 3px solid #1976d2;
+  margin-top: 10px;
+  border-radius: 3px;
+  background-color: #1976d2;
+  padding: 5px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  border: 3px solid #2d8799;
+}
+
+h2 {
+  margin: 0;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 15px 10px;
+}
+
+th {
+
+  background-color: #a9a7a9;
+}
+
+//tr:nth-child(even) {
+//  background-color: #dddddd;
+//}
