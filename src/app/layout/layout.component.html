@@ -2,11 +2,11 @@
   <div class="flex-box">
 
     <div class="left-child">
-      <app-add-record (eventEmit)="updateArray($event)"></app-add-record>
+      <app-add-record (sentMessageParentAddNew)="updateArray($event)"></app-add-record>
     </div>
 
     <div class="right-child">
-      <app-result [array]="array"></app-result>
+      <app-result [myResultTable]="resultArray" (sentMessageParentComponent)="emptyArray()"></app-result>
     </div>
 
   </div>

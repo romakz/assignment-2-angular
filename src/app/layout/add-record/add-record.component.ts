@@ -9,15 +9,16 @@ export class AddRecordComponent implements OnInit {
   date = new Date();
   distance = 0;
   time = 0;
-  @Output() eventEmit = new EventEmitter<object>();
+  @Output() sentMessageParentAddNew = new EventEmitter<object>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  addNew() {
-    this.eventEmit.emit({date: this.date, distance: this.distance, time: this.time});
+  addNewResult() {
+    this.sentMessageParentAddNew.emit({date: this.date, distance: this.distance, time: this.time});
+    console.log('Add new result');
     console.log({date: this.date, distance: this.distance, time: this.time});
     this.doDefaultValue();
   }

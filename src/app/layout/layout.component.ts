@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
-  array = [
+  resultArray = [
     {date: '2021-02-05', distance: 1000, time: 30}
   ];
 
@@ -16,7 +16,12 @@ export class LayoutComponent implements OnInit {
   }
 
   updateArray(newElem) {
-    this.array.push(newElem);
+    console.log('resultArray update');
+    this.resultArray.push(newElem);
   }
 
+  emptyArray() {
+    console.log('resultArray is empty');
+    this.resultArray = [];
+  }
 }

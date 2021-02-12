@@ -2,7 +2,7 @@
   <div class="container">
     <h2>My Result</h2>
 
-    <button class="new-btn">New</button>
+    <button class="new-btn" (click)="sentMessage()">New</button>
 
     <div class="table-div">
       <table>
@@ -13,11 +13,11 @@
           <th>Average speed</th>
           <th>Options</th>
         </tr>
-        <tr *ngFor="let elem of array">
+        <tr *ngFor="let elem of myResultTable">
           <td>{{elem.date}}</td>
           <td>{{elem.distance}}</td>
           <td>{{elem.time}}</td>
-          <td>{{elem.distance / elem.time}}</td>
+          <td>{{(elem.distance / elem.time) | number }}</td>
           <td>
             <button>Edit</button>
             <button>Delete</button>
